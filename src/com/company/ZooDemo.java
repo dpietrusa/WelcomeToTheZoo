@@ -43,6 +43,7 @@ public class ZooDemo {
                     int addToPenChoice = userInput.nextInt();
                     System.out.println("Is This an Animal, or a Baby Animal?\n1 - Animal\n2 - Baby Animal");
                     int animalOrBabyAnimal = userInput.nextInt();
+                    userInput.nextLine();
 
                     if (animalOrBabyAnimal == 1) {
                         Animal newAnimal = new Animal();
@@ -55,8 +56,27 @@ public class ZooDemo {
                         System.out.println("Please Enter the Gender of This Lovely Animal:");
                         String gender = userInput.nextLine();
                         newAnimal.setGender(gender);
-                        System.out.println("Animal Added!");
+
+                      //  newZoo.pensArray.
+                               // pensArray.indexOf(addToPenChoice).addToAnimalsArray().
+                                System.out.println("Animal Added!");
+                    } else if (animalOrBabyAnimal == 2) {
+
                     }
+
+                case 4:
+
+                case 5:
+                    System.out.println("Select Which Pen to view: ");
+                    newZoo.printPenNamesInArray();
+                    int penViewVhoice = userInput.nextInt();
+                    break;
+
+                case 6:
+                    System.out.println("Here Are All The Animals In The Zoo:");
+                    newZoo.printPenNamesInArray();
+                    break;
+
 
             }
 
