@@ -5,7 +5,12 @@ import java.util.List;
 
 public class Zoo {
 
-    List pensArray = new ArrayList();
+    List<Pen> pensArray = new ArrayList();
+
+    public void addPenToArray(Pen pen){
+        pensArray.add(pen);
+    }
+
 
 
 }
